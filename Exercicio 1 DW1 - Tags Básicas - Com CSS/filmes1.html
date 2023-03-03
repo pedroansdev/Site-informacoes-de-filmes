@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Filmes</title>
+    <!-- CSS interno para a estilização do site, neste estão todos os estilos de divs criadas, bem como estilização de hiperlinks, para ficar mais visível e estiloso no site -->
+    <style>
+        p{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#fff;
+            text-align: justify;
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#fff;
+        }
+        h2{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#fff;
+        }
+        #conteudo{
+            width:1000px;
+            float:left;
+        }
+        #conteudo-dir{
+            width:500px;
+            float:left;
+        }
+        #conteudo-esq{
+            width:300px;
+            float:left;
+        }
+        #trailer{
+            width:1000px;
+            float:left;
+        }
+        a:hover, a:visited, a:link{
+            color:#fff;
+        }
+        .video{
+            margin-top: 20px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+        .figcaption{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body bgcolor="#424242">
+    <h1>Avatar: O caminho da água</h1>
+    <hr>
+    <!-- Div onde ficará todo o conteúdo do site -->
+    <div id="conteudo">
+        <!-- Div para o cartaz do filme, que ficará à esquerda dos demais conteúdos -->
+        <div id="conteudo-esq">
+            <!-- Figure para fazer a legenda com a fonte de onde foi tirada as informações que serão apresentadas no site, com a tag "a" para fazer essa ligação ao link original com target blank para criar uma nova guia ao clicar no link -->
+            <figure>
+                <a href="https://filmow.com/avatar-o-caminho-da-agua-t14188/" target="_blank">
+                    <img src="imagem/Avatar2.jpg" width="212" height="315" alt="Imagem Cartaz">
+                    <figcaption>Fonte: (FILMWOW, 2023)</figcaption>
+                </a>
+            </figure>
+        </div>
+        <!-- Div onde ficará todo o conteúdo sobre as informações do filme, que ficará à direita do site -->
+        <div id="conteudo-dir">
+            <h2>Ano produção: 2022</h2>
+            <h2>Dirigido por: James Cameron</h2>
+            <h2>Duração: 192 minutos</h2>
+            <h2>Classificação: 14 anos</h2>
+            <h2>Gênero: Ação, Aventura e Ficção Científica</h2>
+            <h2>País de origem: EUA</h2>
+        </div>
+        <h2>Sinopse:</h2>
+        <p>Doze anos depois de explorar Pandora e se juntar aos Na'vi, Jake Sully formou uma família com Neytiri e se estabeleceu entre os clãs do novo mundo. No entanto, o retorno de um antigo conhecido em busca de vingança faz com que seja necessária uma brusca mudança para o casal e seus filhos, agora que a guerra está declarada.</p>
+    </div>
+    <!-- Div onde ficará o trailer do filme, com FigCaption para a legenda enviando para o link do youtube onde foi pego o trailer usando a tag "a" junto dela, e com a tag video para ser reproduzido dentro do site também  -->
+    <div id="trailer">
+        <figure>
+            <a href="https://youtu.be/QxJQbWOIK4s" target="_blank">
+                <video class="video" width="800" height="450" controls="controls" autoplay="autoplay" alt="Vídeo do trailer">
+                    <source src="video/trailer.mp4" type="video/mp4">
+                </video>
+                <figcaption class="figcaption">Fonte: Avatar: O Caminho da Água | Trailer 2 Legendado</figcaption>
+            </a>
+        </figure>  
+    </div>
+</body>
+</html>
